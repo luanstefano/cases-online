@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body, main {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    
+    background: black url(../imagens/estudantes.jpg) no-repeat center center;
+    background-size: cover;
+    
+}
+
+main {
+    background-color: rgba(91, 0, 211, 0.582);
+    
+}
+
+header {
+    padding: 20px;
+}
+
+section{
+    background-color: rgba(44, 2, 100, 0.74);
+}
+
+section, header, h1, p {
+    color: white;
+}
+
+form {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+form label {
+    margin: 5px 10px 5px 0;
+}
+
+

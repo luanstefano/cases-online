@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    
+<main>
+
+    <header>
+
+        <h1>freeCodeCamp Survey Form</h1>
+
+        <p>Thank you for taking the time to help us improve the platform</p>
+
+    </header>
+
+    <section>
+
+        <form action="formulario.php" autocomplete="on" method="post">
+
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required placeholder="Coloque seu nome" autocomplete="name">
+
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail" required placeholder="Coloque seu email mais usado" autocomplete="email">
+
+            <label for="iida">Idade (Opcional)</label>
+            <input type="number" name="ida" id="iida" placeholder="Sua idade" autocomplete="age" min="10" max="99">
+
+            <label for="iocup">Qual opcao melhor descreve sua ocupacao atual?</label>
+            <select name="ocup" id="iocup" required>
+                <option value="ocupa" disabled selected>Selecione uma ocupacao</option>
+                <option value="estudante">Estudante</option>
+                <option value="trabint">Trabalho em tempo integral </option>
+                <option value="estagiario">Estagiario</option>
+                <option value="ndizer">Prefiro nao dizer</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <p>Voce recomendaria a freeCodeCamp para um amigo?</p>
+            <input type="radio" name="reco" id="certeza">
+            <label for="certeza">Com certeza</label>
+
+            <input type="radio" name="reco" id="talvez">
+            <label for="talvez">Talvez</label>
+            
+            <input type="radio" name="reco" id="nao">
+            <label for="nao">Acho que não</label>
+
+            <label for="igosta">Oque voce mais gosta na freeCodeCamp?</label>
+            <select name="gosta" id="igosta" required>
+                <option value="opcao" disabled selected>Selecione uma opcao</option>
+                <option value="desafios">Desafios</option>
+                <option value="projetos">Projetos</option>
+                <option value="comunidade">Comunidade</option>
+                <option value="opsourc">Open Source</option>
+            </select>
+
+            <p>Oque voce gostaria que melhorasse?</p>
+
+            <input type="checkbox" name="opt1" id="opt1" value="projfe">
+            <label for="opt1">Projetos Front-end</label>
+
+            <input type="checkbox" name="opt2" id="opt2" value="projbe">
+            <label for="opt2">Projetos Back-end</label>
+
+            <input type="checkbox" name="opt3" id="opt3" value="datavisu">
+            <label for="opt3">Data Visualization</label>
+
+            <input type="checkbox" name="opt4" id="opt4" value="desafios">
+            <label for="opt4">Desafios</label>
+
+            <input type="checkbox" name="opt5" id="opt5" value="oscomu">
+            <label for="opt5">Comunidade Open Source</label>
+
+            <input type="checkbox" name="opt6" id="opt6" value="videos">
+            <label for="opt6">Videos</label>
+
+            <input type="checkbox" name="opt7" id="opt7" value="forum">
+            <label for="opt7">Forum</label>
+
+            <label for="isugest">Comentarios ou sugestões?</label>
+            <input type="text" name="sugest" id="isugest" placeholder="Escreva seu comentario" max="500">
+
+            <input type="submit" value="Enviar">
+
+
+        </form>
+
+    </section>
+
+</main>
+
+</body>
+</html>
