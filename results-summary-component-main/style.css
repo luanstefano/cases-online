@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main {
+    display: block;
+    margin: auto;
+}
+
+div.res {
+background-color: hsl(234, 85%, 45%);
+display: block;
+width: 200px;
+height: 300px;
+border-radius: 20px;
+padding: 30px;
+}
+
+div > h3 {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+}
+
+p.nota {
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 30px;
+    box-shadow: inset 20px 20px 20px black;
+}
