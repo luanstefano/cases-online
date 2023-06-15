@@ -1,19 +1,104 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
+body,html {
+    margin: 0;
+    padding: 0;
 }
 
-.wrapper {
+* {
+    box-sizing: border-box;
+}
+
+body.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
-    background-color: blue;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 343px;
+    border-radius: 10px;
+    border: none;
+    padding: 0px;
+}
+
+.imagem {
+    background: black url(images/image-product-mobile.jpg) center no-repeat ;
+    background-size: contain;
+    width: 343px;
+    height: 240px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.texto {
+    padding: 20px;
+}
+
+.titulo {
+    font: 500 .8rem 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    margin: 0px;
+}
+
+.nomeprod {
+    font: 700 2rem 'Fraunces', serif;
+    line-height: 2rem;
+    margin: 20px 0px;
     
 }
 
-img {
-    width: 500px;
+.descricao {
+    font: 500 .9rem 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    
+}
+
+.preco {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.preco__normal {
+    font: 700 2rem 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.preco__antigo {
+    font: 500 .8rem 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.botao, button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    
+    
+}
+
+.botao> button > a {
+    text-decoration: none;
+    color: white;
+    font: 700 .8rem 'Montserrat', sans-serif;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 1px;
+
 }
