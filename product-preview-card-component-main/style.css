@@ -96,12 +96,16 @@ button {
     text-decoration: none;
 }
 
-.botao  img {
+.botao img {
     margin-right: 10px;
 }
 
 .attribution {
     position: fixed;
     bottom: 1px;
-
 }
+
+.botao>a>button:hover {
+    background-color: hsl(159, 36%, 43%);
+}
+
