@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*Desktop*/
+@media screen and (min-width: 960px) {
+
+    * {
+        border: black solid 2px;
+    }
+
+    body.container {
+        flex-direction: row;
+    }
+
+   .card {
+    width: 100vw;
+    
+    flex-direction: row;
+    
+   }
+    
+   .imagem {
+    
+    background: black url(images/image-product-desktop.jpg) center no-repeat ;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+}
+
+}
+

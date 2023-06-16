@@ -23,7 +23,7 @@ body.container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 343px;
+    width:  343px;
     border-radius: 10px;
     border: none;
     padding: 0px;
